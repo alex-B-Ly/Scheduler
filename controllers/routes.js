@@ -4,7 +4,7 @@ var router = express.Router();
 var Stuff = require('../models/stuff.js');
 
 router.get('/', function(req, res){
-  res.sendFile(process.cwd() + '/public/index.html');
+  res.sendFile(process.cwd() + '/views/index.html');
 });
 
 router.post('/add-stuff', function(req, res){
